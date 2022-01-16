@@ -26,7 +26,7 @@ public class Transportation implements ITravelComponent{
     }
 
     public void setVisaPrice(float visaPrice) {
-        setVisaNeeded(true);
+        //setVisaNeeded(true);
         if(this.VisaNeeded) {
             VisaPrice = visaPrice;
         } else {
