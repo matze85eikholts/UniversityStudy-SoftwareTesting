@@ -1,7 +1,7 @@
 package BusinessLayer;
 
 public interface ITrip {
-    default float getPrice() {
+    default float getWholePrice() {
         return 0;
     }
 }

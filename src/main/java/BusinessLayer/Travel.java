@@ -11,4 +11,9 @@ public class Travel implements ITrip {
         this.insurance = i;
         this.transportation = t;
     }
+
+    public float getWholePrice() {
+        return (excursion.getPrice() + habitation.getPrice() + insurance.getPrice() + transportation.getPrice());
+    }
 }
+
