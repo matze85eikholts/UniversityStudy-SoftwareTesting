@@ -4,8 +4,6 @@ import BusinessLayer.*;
 
 public class GUITravelPriceCounter {
     public static void main(String[] args){
-        System.out.println("Hello World!");
-
         Transportation  transport = new Transportation(10000, false);
         transport.setVisaNeeded(false);
         transport.setDiscount(0);
@@ -16,6 +14,10 @@ public class GUITravelPriceCounter {
         insure.setInsurancePrice(21300);
         Travel travelTrip = new Travel(excursion,habit,insure,transport);
         float TravelPrice = travelTrip.getWholePrice();
+        System.out.println("Цена страховки =" + insure.getPrice());
+        System.out.println("Цена экскурсии =" + excursion.getPrice());
+        System.out.println("Цена проживания =" + habit.getPrice());
+        System.out.println("Цена перевозки =" + transport.getPrice());
         System.out.println("Сумма всей поездки = "+TravelPrice);
     }
 }
